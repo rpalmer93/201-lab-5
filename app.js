@@ -110,6 +110,7 @@ function multiplyArray(testArray){ //eslint-disable-line
   var totalProduct = multiply(initialProduct,testArray[2])[0];
   var message = 'The numbers ' + testArray + ' have a product of ' + totalProduct + '.';
   return [totalProduct, message];
+
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it

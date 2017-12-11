@@ -106,10 +106,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-  var initialSum = product(testArray)
-  var totalSum = product(testArray[0],testArray[1],testArray[2]);
-  var message = 'The numbers ' + testArray + ' have a product of ' + totalSum
-  return [totalSum, message];
+  var initialProduct = multiply(testArray[0], testArray[1])[0];
+  var totalProduct = multiply(initialProduct,testArray[2])[0];
+  var message = 'The numbers ' + testArray + ' have a product of ' + totalProduct + '.';
+  return [totalProduct, message];
+
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
